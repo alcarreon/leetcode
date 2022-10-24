@@ -37,7 +37,7 @@ const pivotIndex = (arr) => {
     console.log(arr.slice(0, i).reduce((x, y) => x + y, 0));
     console.log(arr.slice(i + 1).reduce((x, y) => x + y, 0));
 
-    if (i == 0 && arr.slice(i + 1).reduce((x, y) => x + y) == 0) {
+    if (i == 0 && arr.slice(i + 1).reduce((x, y) => x + y, 0) == 0) {
       holder.push(0);
     } else if (
       arr.slice(0, i).reduce((x, y) => x + y, 0) ==
