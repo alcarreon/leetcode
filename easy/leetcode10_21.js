@@ -19,6 +19,11 @@
 // Input: nums = [3,1,2,10,1]
 // Output: [3,4,6,16,17]
 
+// parameters array
+// return array
+// examples
+// pseudo code given an array iterate through it adding the first elemnt to the array, subsequent elements take the slice at the current index plus one and reduce it to get the running total of the array for each element
+
 const runningSum = (arr) => {
   return arr.map((x, y) =>
     y == 0 ? x : arr.slice(0, y + 1).reduce((x, y) => x + y, 0)
