@@ -13,8 +13,12 @@
 // Input: s = "axc", t = "ahbgdc"
 // Output: false
 
+// parameters two strings
+// return boolean
+// examples
+// pseudo code given two strings split the second string by each character and create a variable to that starts at 0, iterate through the split string and check to see if the first string at index of the variable starting at 0 is equal to the current character
+
 const isSubsequence = (s, t) => {
-  let holder = [];
   let splitT = t.split("");
   let count = 0;
   splitT.map((x, y) => {
