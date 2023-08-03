@@ -53,3 +53,19 @@ const flipAndInvertImage = (arr) => {
 //     [1, 0, 1, 0],
 //   ])
 // ); // [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+
+const nums = [1, 3, 5, 15, 20, 30];
+
+const fizzBuzz = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (nums[i] % 15 == 0) {
+      console.log("fizzbuzz");
+    } else if (nums[i] % 5 == 0) {
+      console.log("buzz");
+    } else if (nums[i] % 3 == 0) {
+      console.log("fizz");
+    }
+  }
+};
+
+console.log(fizzBuzz(nums));
