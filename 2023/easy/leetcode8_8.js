@@ -57,7 +57,6 @@ function gcdOfStrings(str1, str2) {
     str1.length < str2.length
       ? [str1.length, str1, str2]
       : [str2.length, str2, str1];
-  console.log(minorWord);
 
   for (let i = 0; i < minorWord[0]; i++) {
     if (str1Split[i] == str2Split[i]) {
